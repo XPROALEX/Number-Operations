@@ -8,15 +8,11 @@ public class Main {
         int b = a;
         b += 1;
 
-        boolean isOdd = true;
-        if (b % 2 == 0) {
-            isOdd = false;
-        }
+        boolean isOdd = b % 2 != 0;
         System.out.println("Il numero è dispari: " + isOdd);
 
         var fattore = b * (b+1);
-        if (fattore % 3 == 0) {
-            System.out.print("E' un multiplo di 3: " + fattore);
-        }
+        boolean isMultiple=fattore % 3 == 0;
+        System.out.print("E' un multiplo di 3: " + isMultiple);
     }
 }
