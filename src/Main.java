@@ -13,5 +13,10 @@ public class Main {
             isOdd = false;
         }
         System.out.println("Il numero è dispari: " + isOdd);
+
+        var fattore = b * (b+1);
+        if (fattore % 3 == 0) {
+            System.out.print("E' un multiplo di 3: " + fattore);
+        }
     }
 }
